@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        p {
+            text-align: right;
+            color: red;
+        }
+
+        #para1 {
+            text-align: center;
+            color: blue;
+        }
+
+        h1.description {
+            text-align: left;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Every paragraph will be affected by the style.</p>
+    <p id="para1">Me too!</p>
+    <p class="description">And me!</p>
+    <h1 class="description">Test</h1>
+
+    <h1>Selector Kombinasi</h1>
+    <h3>Descendant Selector</h3>
+    <div>
+        <p>Every <span>paragraph</span> will be affected by the style.</p>
+        <p class="test1">Every <span>paragraph</span> will be affected by the style.</p>
+        <p>Every paragraph will be affected by the style.</p>
+    </div>
+    <p>hello</p>
+    <style>
+        /*mengambil semua element P yg ada di tag div*/
+        div p {
+            color: green
+        }
+
+        div p.test1>span {
+            font-weight: bold;
+        }
+    </style>
+
+    <h1>Selector Pseudo-class</h1>
+    <h3>Descendant Selector</h3>
+    <div id="content">
+        <p class="para1">Every paragraph will be affected by the style.</p>
+        <p>Every paragraph will be affected by the style.</p>
+        <a href="">Click me</a>
+    </div>
+    <style>
+        .para1:hover{font-size: 20px;}
+        a:hover{text-decoration: none;}
+    </style>
+
+
+</body>
+
+</html>
