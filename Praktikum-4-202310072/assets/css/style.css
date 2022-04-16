@@ -1,0 +1,117 @@
+body {
+  background: #fff;
+  margin: auto;
+}
+
+h1 {
+  color: purple;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin: 10px;
+  box-shadow: 3px 3px 5px gray;
+}
+
+.image-container {
+  position: relative;
+  padding: 10px;
+}
+
+.image-container > img {
+  width: 400px;
+  height: 500px;
+  flex: end;
+}
+
+.text-image-container {
+  background-color: maroon;
+  color: #fff;
+  text-align: center;
+  flex: content;
+  padding: 10px;
+}
+
+.visi-misi-container {
+  position: relative;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin: 10px;
+}
+
+.maps {
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+  box-shadow: 3px 3px 5px gray;
+}
+
+.maps > iframe {
+  width: 100%;
+}
+
+.matkul {
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.tabel {
+  padding: 10px;
+  box-shadow: 3px 3px 5px gray;
+  width: 100%;
+}
+
+.tabel > table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+.tabel > table {
+  width: 100%;
+}
+
+.jadwal {
+  padding: 10px;
+  margin: 10px;
+  width: auto;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.nav > li {
+  float: left;
+  padding: 10px;
+  margin: 5px;
+  background-color: #fff;
+  color: purple;
+  border: 1px solid purple;
+  border-radius: 5px;
+}
+
+.nav > li:hover {
+  color: #fff;
+  background-color: purple;
+}
+
+.nav > li.active {
+  color: #fff;
+  background-color: purple;
+}
