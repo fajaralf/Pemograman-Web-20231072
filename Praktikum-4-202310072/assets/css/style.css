@@ -27,6 +27,7 @@ h1 {
 }
 
 .text-image-container {
+    margin-top: -5px;
   background-color: maroon;
   color: #fff;
   text-align: center;
